@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow internal or non-public paths if added later
+# Disallow: /internal/
+# Disallow: /drafts/
+
+Sitemap: https://sargentum.systems/sitemap.xml

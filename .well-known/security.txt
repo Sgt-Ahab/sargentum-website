@@ -1,0 +1,18 @@
+# security.txt for Sargentum Systems & Research LLC
+# https://sargentum.systems/.well-known/security.txt
+# Compliant with RFC 9116
+
+Contact: mailto:security@sargentum.systems
+Contact: mailto:contact@sargentum.systems
+
+Policy: https://sargentum.systems/security-policy.md
+
+Acknowledgments: https://sargentum.systems/security-acknowledgments.md
+
+Preferred-Languages: en
+
+Expires: 2027-07-14T00:00:00.000Z
+
+Hiring: false
+
+# This file is signed or can be verified at the canonical location above.
