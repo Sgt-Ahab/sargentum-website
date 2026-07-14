@@ -8,8 +8,8 @@ Official website for **Sargentum Systems & Research LLC** — building practical
 ## Structure
 
 ### Systems Division
-- **[Checksum Suite](/systems/x402/checksum-suite/)** — Fast hash generation and validation (SHA-256, SHA-512, etc.) with dual human + JSON output.
-- **[Directory Consultation](/systems/x402/directory-consultation/)** — Structured naming and directory suggestions for agent projects and workflows.
+- **[Checksum Suite](https://sargentum.systems/systems/x402/checksum-suite/index.html)** — Fast hash generation and validation (SHA-256, SHA-512, etc.) with dual human + JSON output.
+- **[Directory Consultation](https://sargentum.systems/systems/x402/directory-consultation/index.html)** — Structured naming and directory suggestions for agent projects and workflows.
 - x402 Agent Services hub (expanding)
 
 ### Research Division
