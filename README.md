@@ -14,5 +14,5 @@ Official website for **Sargentum Systems & Research LLC** — building practical
 
 ---
 
-**Site:** [sargentum.systems](https://sargentum.systems) (coming soon)  
+**Site:** [sargentum.systems](https://sargentum.systems)
 **GitHub:** [Sgt-Ahab](https://github.com/Sgt-Ahab)
