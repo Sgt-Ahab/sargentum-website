@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Directory Consultation - Sargentum Systems</title>
+    <meta name="description" content="Smart naming and directory structure suggestions for agent projects and workflows." />
+    <link rel="stylesheet" href="../../../assets/styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+      #form-section label {
+        display: block;
+        margin: 12px 0 4px;
+        font-weight: 600;
+      }
+
+      #form-section textarea,
+      #form-section input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 12px;
+        background: rgba(17,20,26,0.8);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        color: var(--text);
+      }
+
+      #form-section button {
+        margin-top: 16px;
+        width: 100%;
+      }
+
+      #form-section div[style*="grid"] label {
+        margin: 4px 0;
+        font-weight: normal;
+      }
+
+      #results-section details {
+        margin-top: 16px;
+      }
+
+      #json-output {
+        background: rgba(0,0,0,0.4);
+        padding: 12px;
+        border-radius: 6px;
+        overflow-x: auto;
+        font-size: 0.9rem;
+        white-space: pre;
+      }
+</style>
+</head>
+<body>
+    <header class="top">
+        <div class="brand">
+            <div class="mark">
+                <img src="../../../assets/SSR_Logo.svg" alt="SSR Logo">
+            </div>
+            <div>
+                <div class="name">Sargentum Systems &amp; Research</div>
+                <div class="tag">Project structure guidance</div>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="nav">
+        <ul>
+            <li><a href="../../../index.html">Home</a></li>
+            <li><a href="../../../systems/index.html">Systems</a></li>
+            <li><a href="../../../research/index.html">Research</a></li>
+            <li><a href="../../../about/index.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main class="wrap">
+        <section class="hero">
+            <h1 style="text-align: center;">Directory Consultation</h1>
+            <p>Get smart, consistent naming and directory structure suggestions for your agent projects and workflows.</p><br>
+        </section>
+
+        <!-- Form -->
+        <section class="card" id="form-section">
+            <!-- JS populated -->
+        </section>
+
+        <!-- Results -->
+        <section class="card" id="results-section" style="display:none;">
+            <h2>Suggested Structure</h2>
+            <div id="human-result"></div>
+            <details>
+                <summary>JSON Output (for agents)</summary>
+                <pre id="json-output"></pre>
+                <button onclick="copyJSON()">Copy JSON</button>
+            </details>
+        </section>
+    </main>
+
+    <footer class="foot">
+        <span>© <span id="year"></span> Sargentum Systems &amp; Research</span><br>
+        <a href="../../../privacy-policy.md">Privacy Policy</a>&emsp;
+        <a href="../../../terms-of-service.md">Terms of Service</a>
+    </footer>
+
+    <script src="../../../assets/directory-consult.js" defer></script>
+</body>
+</html>
