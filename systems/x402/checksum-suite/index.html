@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checksum Suite - Sargentum Systems</title>
+    <meta name="description" content="Fast, reliable hash generation and validation for humans and agents." />
+    <link rel="stylesheet" href="../../../assets/styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header class="top">
+        <div class="brand">
+            <div class="mark">
+                <img src="../../../assets/SSR_Logo.svg" alt="SSR Logo">
+        </div>
+        <div>
+            <div class="name">Sargentum Systems &amp; Research</div>
+            <div class="tag">Checksums generated and validated</div>
+        </div>
+        </div>
+    </header>
+        <nav class="nav">
+        <ul>
+            <li><a href="../../../index.html" title="Return to Homepage">Home</a></li>
+            <li><a href="../../../systems/index.html" title="Systems Overview">Systems</a></li>
+            <li><a href="../../../research/index.html" title="Research Overview">Research</a></li>
+            <li><a href="../../../about/index.html" title="Mission Statement & Goals">About</a></li>
+            <li><a href="../index.html" title="Return to x402 Systems">x402</a></li>
+        </ul>
+    </nav>
+    <main class="wrap">
+        <section class="hero">
+            <h1 style="text-align: center;">Checksum Suite</h1>
+            <p>
+                Fast cryptographic hash generation and validation. Built for both humans and AI agents.
+                Currently hashing SHA-256, SHA-512, SHA-384, SHA-1, and MD5.
+            </p>
+            <br>
+            <!-- Mode Selector -->
+        <div style="text-align:center; margin-top: -20px;">
+            <button onclick="switchMode(0)" id="btn-generate" class="btn">Generate Hash</button>
+            <button onclick="switchMode(1)" id="btn-validate" class="btn ghost">Validate Hash</button>
+        </div>
+        </section>
+        
+
+        <!-- Form -->
+        <section class="card" id="form-section">
+            <!-- JS will fill this based on mode -->
+        </section>
+
+        <!-- Results -->
+        <section class="card" id="results-section" style="display:none;">
+            <h2>Result</h2>
+            <div id="human-result"></div>
+            <details>
+                <summary>JSON Output (for agents)</summary>
+                <pre id="json-output"></pre>
+                <button onclick="copyJSON()">Copy JSON</button>
+            </details>
+        </section>
+    </main>
+    
+
+    <footer class="foot">
+        <span>© <span id="year"></span> Sargentum Systems &amp; Research</span><br>
+    <a href="../../../privacy-policy.md">Privacy Policy</a>&emsp;<a href="../../../terms-of-service.md">Terms of Service</a>
+    </footer>
+
+    <script src="../../../assets/checksum.js" defer></script>
+</body>
+</html>

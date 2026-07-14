@@ -1,0 +1,34 @@
+# Sargentum Systems - Agent Toolkit
+
+You are interacting with services hosted at https://sargentum.systems
+
+## Available Services
+
+### 1. Checksum Suite
+- Purpose: Third-party checksum generation and validation for files.
+- Use cases: Verify file integrity, generate secure hashes, agent file safety checks.
+- Endpoints:
+  - POST /api/checksum/validate — Validate a file against an expected hash
+  - POST /api/checksum/generate — Generate hash(es) for a file
+- Payment: x402 (USDC on Base)
+- Human page: https://sargentum.systems/checksum-suite
+
+### 2. Directory Consultation
+- Purpose: Get smart naming and directory structure suggestions for agent projects and workflows.
+- Use cases: Consistent naming conventions, pipeline structure, agent-friendly organization.
+- Endpoint:
+  - POST /api/directory/consult — Get naming and structure recommendations
+- Payment: x402 (USDC on Base)
+- Human page: https://sargentum.systems/directory-consultation
+
+## How to Use
+- All services are available via simple HTTP POST requests.
+- Payment is handled automatically via the x402 protocol.
+- Responses are returned in clean JSON format.
+- Results are ephemeral — do not expect persistent file storage.
+
+## Contact
+- Website: https://sargentum.systems
+- Email: contact@sargentum.systems
+
+This site provides practical, payable tools for AI agents.

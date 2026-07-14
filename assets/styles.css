@@ -115,3 +115,26 @@ a:hover{text-decoration:underline}
   font-size: 32px;
   padding: 10px 10px 10px 10px;
 }
+
+#human-result code {
+  word-break: break-all;
+  overflow-wrap: break-word;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  display: block;
+  background: rgba(0,0,0,0.3);
+  padding: 8px;
+  border-radius: 6px;
+  margin: 8px 0;
+}
+
+#json-output {
+  background: rgba(0,0,0,0.4);
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  white-space: pre;
+  font-size: 0.9rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
