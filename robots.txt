@@ -5,4 +5,8 @@ Allow: /
 # Disallow: /internal/
 # Disallow: /drafts/
 
+# Sitemap
 Sitemap: https://sargentum.systems/sitemap.xml
+
+# Optional: Crawl-delay for polite behavior
+Crawl-delay: 1
