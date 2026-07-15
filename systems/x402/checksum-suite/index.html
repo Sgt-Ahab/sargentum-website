@@ -34,17 +34,15 @@
     </nav>
     <main class="wrap">
         <section class="hero">
-            <h1 style="text-align: center;">Checksum Suite</h1>
-            <p>
-                Fast cryptographic hash generation and validation. Built for both humans and AI agents.
-                Currently hashing SHA-256, SHA-512, SHA-384, SHA-1, and MD5.
+            <h1>Checksum Suite (Demo)</h1>
+            <p>Fast cryptographic hash generation and validation — a concept preview of future x402 agent services.</p>
+            <p style="font-size:0.95rem; color:var(--muted); margin-top:12px;">
+                <strong>Note:</strong> This is a client-side demonstration. The real production service will be available via x402-paid API with full backend performance and additional algorithms.
             </p>
-            <br>
-            <!-- Mode Selector -->
-        <div style="text-align:center; margin-top: -20px;">
-            <button onclick="switchMode(0)" id="btn-generate" class="btn">Generate Hash</button>
-            <button onclick="switchMode(1)" id="btn-validate" class="btn ghost">Validate Hash</button>
-        </div>
+            <div style="text-align:center; margin-top:10px;">
+                <button onclick="switchMode(0)" id="btn-generate" class="btn">Generate Hash</button>
+                <button onclick="switchMode(1)" id="btn-validate" class="btn ghost">Validate Hash</button>
+            </div>
         </section>
         
 
@@ -52,7 +50,9 @@
         <section class="card" id="form-section">
             <!-- JS will fill this based on mode -->
         </section>
-
+        <p style="font-size:0.9rem; color:var(--muted); margin-top:8px;">
+            This demo runs entirely in your browser. Future x402 service will offer server-side processing for larger files and more algorithms.
+        </p>
         <!-- Results -->
         <section class="card" id="results-section" style="display:none;">
             <h2>Result</h2>

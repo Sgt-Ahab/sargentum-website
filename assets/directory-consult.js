@@ -8,6 +8,9 @@ function renderForm() {
   const formSection = document.getElementById('form-section');
   formSection.innerHTML = `
     <h2>Request Directory Consultation</h2>
+    <p style="font-size:0.9rem; color:orange;">
+        <strong>Demo Mode:</strong> Suggestions are generated with rule-based logic. The production x402 service will deliver more intelligent, context-aware recommendations.
+    </p>
     <form id="consult-form">
       <label>Project Description / Workflow</label>
       <textarea id="project-desc" rows="5" placeholder="Describe your project or workflow (e.g. Linear data processing pipeline for sensor logs)" required></textarea>

@@ -13,6 +13,9 @@ function renderForm() {
   if (currentMode === 0) {
     formSection.innerHTML = `
       <h2>Generate Hash</h2>
+      <p style="font-size:0.9rem; color:orange;">
+        <strong>Demo Mode:</strong> Results are computed client-side. Production x402 API will provide authenticated, high-volume processing.
+      </p>
       <form id="generate-form">
         <label style="padding-bottom: 10px;">Upload File</label><br>
         <input type="file" id="file-input" required style="padding-bottom: 10px;">
@@ -29,6 +32,9 @@ function renderForm() {
   } else {
     formSection.innerHTML = `
       <h2>Validate Hash</h2>
+      <p style="font-size:0.9rem; color:orange;">
+        <strong>Demo Mode:</strong> Results are computed client-side. Production x402 API will provide authenticated, high-volume processing.
+      </p>
       <form id="validate-form">
         <label style="padding-bottom: 10px; padding-right: 10px;">Upload File</label>
         <input type="file" id="file-input" required style="padding-bottom: 10px;">
