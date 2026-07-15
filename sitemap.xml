@@ -37,5 +37,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <url>
+    <loc>https://sargentum.systems/systems/x402/checksum-suite/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+      <loc>https://sargentum.systems/systems/x402/directory-consultation/</loc>
+      <lastmod>2026-07-14</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+  </url>
+  
 
 </urlset>
