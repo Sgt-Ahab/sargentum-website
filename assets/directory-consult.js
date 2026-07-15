@@ -8,8 +8,9 @@ function renderForm() {
   const formSection = document.getElementById('form-section');
   formSection.innerHTML = `
     <h2>Request Directory Consultation</h2>
-    <p style="font-size:0.9rem; color:orange;">
-        <strong>Demo Mode:</strong> Suggestions are generated with rule-based logic. The production x402 service will deliver more intelligent, context-aware recommendations.
+    <p style="color:#f59e0b; margin: 8px 0;">
+      <strong>Demo Mode:</strong> Suggestions are generated using rule-based logic. 
+      The production x402 service will use more advanced reasoning.
     </p>
     <form id="consult-form">
       <label>Project Description / Workflow</label>

@@ -35,9 +35,12 @@
     <main class="wrap">
         <section class="hero">
             <h1>Checksum Suite (Demo)</h1>
-            <p>Fast cryptographic hash generation and validation — a concept preview of future x402 agent services.</p>
-            <p style="font-size:0.95rem; color:var(--muted); margin-top:12px;">
-                <strong>Note:</strong> This is a client-side demonstration. The real production service will be available via x402-paid API with full backend performance and additional algorithms.
+            <p>
+                Fast cryptographic hash generation and validation — a concept preview of future x402 agent services.
+            </p>
+            <p style="color:#f59e0b; font-weight:500;">
+              <strong>Demo Version</strong> — This page simulates the Checksum Suite experience. 
+              The actual service will be available as a paid x402 API with server-side processing.
             </p>
             <div style="text-align:center; margin-top:10px;">
                 <button onclick="switchMode(0)" id="btn-generate" class="btn">Generate Hash</button>
@@ -50,8 +53,8 @@
         <section class="card" id="form-section">
             <!-- JS will fill this based on mode -->
         </section>
-        <p style="font-size:0.9rem; color:var(--muted); margin-top:8px;">
-            This demo runs entirely in your browser. Future x402 service will offer server-side processing for larger files and more algorithms.
+        <p style="font-size: 0.85rem; color: #666; margin-top: 20px;">
+            This is a frontend demonstration. Future x402 service will offer server-side processing.
         </p>
         <!-- Results -->
         <section class="card" id="results-section" style="display:none;">
