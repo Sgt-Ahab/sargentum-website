@@ -13,7 +13,7 @@ function renderForm() {
   if (currentMode === 0) {
     formSection.innerHTML = `
       <h2>Generate Hash</h2>
-      <p style="color:#f59e0b; margin: 8px 0;">
+      <p style="color:#f59e0b; margin: 8px 0; font-size: 12px;">
         <strong>Demo Mode:</strong> Results are computed in your browser. 
         The production x402 service will run server-side with better performance.
       </p>
@@ -33,7 +33,7 @@ function renderForm() {
   } else {
     formSection.innerHTML = `
       <h2>Validate Hash</h2>
-      <p style="color:#f59e0b; margin: 8px 0;">
+      <p style="color:#f59e0b; margin: 8px 0; font-size: 12px;">
         <strong>Demo Mode:</strong> Results are computed in your browser. 
         The production x402 service will run server-side with better performance.
       </p>
@@ -79,34 +79,74 @@ async function handleSubmit(e) {
 
   try {
     const hash = await computeHash(file, algorithm);
+    const timestamp = new Date().toISOString();
 
     let humanHTML = '';
     let jsonData = {};
 
     if (currentMode === 0) {
-      // Generate
+      // Generate Mode
       humanHTML = `
         <p><strong>File:</strong> ${file.name}</p>
         <p><strong>Algorithm:</strong> ${algorithm}</p>
         <p><strong>Hash:</strong> <code>${hash}</code></p>
+        <p style="font-size:0.9rem; color:#888; margin-top:10px;">
+          <em>Demo result. Production version includes signed attestation.</em>
+        </p>
       `;
-      jsonData = { status: "success", filename: file.name, algorithm, hash, timestamp: new Date().toISOString() };
+
+      jsonData = {
+        status: "success",
+        mode: "generate",
+        algorithm: algorithm.toLowerCase().replace("-", ""),
+        hash: hash,
+        file_size_bytes: file.size,
+        timestamp: timestamp,
+        attestation: {
+          issuer: "sargentum.systems",
+          signature: "0x_demo_signature_placeholder",
+          note: "This is a demo attestation. The production service will return a real signed attestation. No file was retained."
+        },
+        message: "Hash generated successfully. Result is ephemeral."
+      };
     } else {
-      // Validate
+      // Validate Mode
       const expected = document.getElementById('expected-hash').value.trim().toLowerCase();
       const isValid = hash.toLowerCase() === expected;
+
       humanHTML = `
         <p><strong>File:</strong> ${file.name}</p>
         <p><strong>Status:</strong> <span style="color:${isValid ? 'lime' : 'red'}">${isValid ? 'VALID' : 'INVALID'}</span></p>
         <p><strong>Computed:</strong> <code>${hash}</code></p>
         <p><strong>Expected:</strong> <code>${expected}</code></p>
+        <p style="font-size:0.9rem; color:#888; margin-top:10px;">
+          <em>Demo result. Production version includes signed attestation.</em>
+        </p>
       `;
-      jsonData = { status: isValid ? "valid" : "invalid", filename: file.name, algorithm, computed: hash, expected, timestamp: new Date().toISOString() };
+
+      jsonData = {
+        status: isValid ? "match" : "mismatch",
+        mode: "validate",
+        algorithm: algorithm.toLowerCase().replace("-", ""),
+        computed: hash,
+        expected: expected,
+        match: isValid,
+        file_size_bytes: file.size,
+        timestamp: timestamp,
+        attestation: {
+          issuer: "sargentum.systems",
+          signature: "0x_demo_signature_placeholder",
+          note: "This is a demo attestation. The production service will return a real signed attestation."
+        },
+        message: isValid ? "Checksum match confirmed." : "Checksum does not match."
+      };
     }
-    //===WARNING FOR WEAK ALGORITHMS===
+
+    // Warning for weak algorithms
     if (algorithm === "SHA-1") {
-      humanHTML += `<p style="color:orange; font-size:0.9rem; margin-top:8px;"><strong>Warning:</strong> ${algorithm} is legacy and not recommended for security purposes.</p>`;
+      humanHTML += `<p style="color:orange; font-size:0.9rem; margin-top:8px;"><strong>Warning:</strong> SHA-1 is legacy and not recommended for security purposes.</p>`;
     }
+
     document.getElementById('human-result').innerHTML = humanHTML;
     document.getElementById('json-output').textContent = JSON.stringify(jsonData, null, 2);
 

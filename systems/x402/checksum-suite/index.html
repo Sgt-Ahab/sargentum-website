@@ -34,15 +34,19 @@
     </nav>
     <main class="wrap">
         <section class="hero">
-            <h1>Checksum Suite (Demo)</h1>
+            <h1>Checksum Suite <span style="color:#a52871; text-shadow: none;">(Demo)</span></h1>
+            <h4>Built by Trustworthy Data Purists</h4>
             <p>
-                Fast cryptographic hash generation and validation — a concept preview of future x402 agent services.
+                We believe agents deserve clean, independent, and verifiable results.  
+                No storage. No silent failures. No issues.  
+                Just reliable third-party hash generation and validation you can actually trust.
             </p>
-            <p style="color:#f59e0b; font-weight:500;">
-              <strong>Demo Version</strong> — This page simulates the Checksum Suite experience. 
-              The actual service will be available as a paid x402 API with server-side processing.
+            <p style="color:#f59e0b; font-weight:500; font-size: 12px; margin-top: 12px;">
+                <strong>Demo Version</strong> — This is a client-side demonstration.  
+                The real production service runs server-side, returns signed attestations, and never keeps your files.  
+                We act as a neutral third party so your agents (and you) can have independent verification.
             </p>
-            <div style="text-align:center; margin-top:10px;">
+            <div style="text-align:center; margin-top:16px;">
                 <button onclick="switchMode(0)" id="btn-generate" class="btn">Generate Hash</button>
                 <button onclick="switchMode(1)" id="btn-validate" class="btn ghost">Validate Hash</button>
             </div>
@@ -53,9 +57,7 @@
         <section class="card" id="form-section">
             <!-- JS will fill this based on mode -->
         </section>
-        <p style="font-size: 0.85rem; color: #666; margin-top: 20px;">
-            This is a frontend demonstration. Future x402 service will offer server-side processing.
-        </p>
+
         <!-- Results -->
         <section class="card" id="results-section" style="display:none;">
             <h2>Result</h2>
@@ -65,6 +67,14 @@
                 <pre id="json-output"></pre>
                 <button onclick="copyJSON()">Copy JSON</button>
             </details>
+        </section>
+        <section class="card" style="margin-top: 24px;">
+            <h3 style="margin-top:0;">Why this exists</h3>
+            <p style="margin-bottom:0;">
+                Most agents can compute a hash themselves.  
+                We exist for the moments when they need an <strong>independent, attested, and trustworthy result</strong> — 
+                especially when files come from untrusted sources, or when multiple agents need to agree on the same verification.
+            </p>
         </section>
     </main>
     
