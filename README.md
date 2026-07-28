@@ -27,8 +27,6 @@ Official website for **Sargentum Systems & Research LLC** — building practical
 
 ## Tech
 - Static HTML/CSS/JS on GitHub Pages
-- Agent-friendly JSON outputs
-- x402 micropayments in process
 
 ---
 
