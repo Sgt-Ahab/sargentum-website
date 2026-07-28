@@ -11,7 +11,7 @@
 
   <url>
     <loc>https://sargentum.systems/systems/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -31,26 +31,7 @@
   </url>
 
   <!-- Sub-pages (add more as you expand) -->
-  <url>
-    <loc>https://sargentum.systems/systems/x402/</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
   
-  <url>
-    <loc>https://sargentum.systems/systems/x402/checksum-suite/</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-      <loc>https://sargentum.systems/systems/x402/directory-consultation/</loc>
-      <lastmod>2026-07-14</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-  </url>
   
 
 </urlset>
