@@ -27,6 +27,7 @@ a:hover{text-decoration:underline}
   display:flex; align-items:center; justify-content:space-between;
   padding:20px 24px; border-bottom:1px solid var(--line);
   position:sticky; top:0; background:rgba(11,13,16,.75); backdrop-filter: blur(8px);
+  z-index:100;
 }
 
 .brand{display:flex; gap:12px; align-items:center}
@@ -40,7 +41,7 @@ a:hover{text-decoration:underline}
 .name{font-weight:800; letter-spacing:.2px}
 .tag{color:var(--muted); font-size:14px}
 
-.nav{display:flex; border-bottom:1px solid var(--line); background:var(--panel)}
+.nav{display:flex; border-bottom:1px solid var(--line); background:var(--panel); position:sticky; top:0; z-index:99;}
 .nav ul{list-style-type:none; background-color: var(--panel); padding: 0px; overflow: hidden;}
 .nav a{padding:10px; color: var(--accent); text-decoration:none; display:block; text-align:center}
 .nav a:hover{background:var(--muted); text-decoration:none}
@@ -114,6 +115,26 @@ a:hover{text-decoration:underline}
 .social-link{
   font-size: 32px;
   padding: 10px 10px 10px 10px;
+}
+
+.card-span {
+  grid-column: 1 / -1;
+  text-align: left;
+}
+
+.decrees {
+  margin: 0 0 12px;
+  padding-left: 1.25rem;
+  color: var(--muted);
+}
+
+.decrees li {
+  margin: 0 0 15px;
+  line-height: 1.5;
+}
+
+.decrees strong {
+  color: var(--text);
 }
 
 #human-result code {
