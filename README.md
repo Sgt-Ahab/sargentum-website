@@ -7,10 +7,13 @@ Official website for **Sargentum Systems & Research LLC** — building practical
 
 ## Structure
 
+### Oath of Data Purity
+- **[Data Purity Oath](https://sargentum.systems/oath/index.html)** — 10 Points of Sargentum's decrees for commitment.
+
 ### Systems Division
-- **[Checksum Suite](https://sargentum.systems/systems/x402/checksum-suite/index.html)** — Fast hash generation and validation (SHA-256, SHA-512, etc.) with dual human + JSON output.
-- **[Directory Consultation](https://sargentum.systems/systems/x402/directory-consultation/index.html)** — Structured naming and directory suggestions for agent projects and workflows.
-- x402 Agent Services hub (expanding)
+- **[Spreadsheet Cleaning](https://sargentum.systems/systems/spreadsheets/index.html)** — Introductory rate of $40-$60, two hours max per file, one format per column.
+- **[Workbook Templates](https://sargentum.systems/systems/spreadsheets/index.html)** — Two-tabs of easy data-entry and totals for viewing.
+- **[Spreadsheet Form](https://forms.gle/qgM8wad5v4Vk2TK96)** — Google Form for inquiring on a Spreadsheet cleaning
 
 ### Research Division
 - Exploratory work, publications, and institutional alignment.
